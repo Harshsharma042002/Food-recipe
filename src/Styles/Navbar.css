@@ -1,0 +1,89 @@
+
+.navbar {
+  background-color: #000;
+  padding: 1rem;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+.navbar a, .navbar button {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover, .navbar button:hover {
+  color: #ff6347;
+  transform: scale(1.1);
+}
+
+.navbar a::before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: #ff6347;
+  transition: width 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar button:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none; 
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar a, .navbar button {
+    margin: 0 1rem;
+  }
+}

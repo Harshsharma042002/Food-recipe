@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+.App {
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 1rem;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.navbar a:hover {
+  color: #ff6347;
+  transform: scale(1.1);
+}
+.navbar a::before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: #ff6347;
+  transition: width 0.3s;
+}
+.navbar a:hover::before {
+  width: 100%;
+}
+.page {
+  padding: 2rem;
+}
+.page h1 {
+  color: #333;
+}
+.page p {
+  color: #666;
+}

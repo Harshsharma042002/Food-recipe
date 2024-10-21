@@ -1,0 +1,67 @@
+
+
+.create-recipe {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-recipe h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .create-recipe form {
+    display: grid;
+    grid-gap: 1rem;
+  }
+  
+  .create-recipe label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .create-recipe input[type='text'],
+  .create-recipe textarea,
+  .create-recipe input[type='number'],
+  .create-recipe input[type='file'] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .create-recipe input[type='text']:focus,
+  .create-recipe textarea:focus,
+  .create-recipe input[type='number']:focus,
+  .create-recipe input[type='file']:focus {
+    outline: none;
+    border-color: #ff6347;
+  }
+  
+  .create-recipe button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .create-recipe button:hover {
+    background-color: #e54c33;
+    transform: scale(1.05);
+  }
+  
+  .create-recipe button[type='button'] {
+    background-color: #4CAF50;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
